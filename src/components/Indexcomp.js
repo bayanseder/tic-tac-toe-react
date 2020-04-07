@@ -29,14 +29,14 @@ class Boxs extends Component {
           const reset = Array(9).fill(null)
           this.setState({playerA : aResult,
                       values : reset})
-          console.log('yeah .... winner player A')
+          return alert('yeah .... winner player A')
         }
        else if(this.state.values[a]==="O"){
         const bResult=this.state.playerB + 1;
         const reset = Array(9).fill(null)
           this.setState({playerB : bResult,
                         values : reset })
-          console.log('yeah .... winner player B')
+         return alert('yeah .... winner player B')
         }
       }
     }
@@ -68,6 +68,7 @@ class Boxs extends Component {
       <h2>Result</h2>
     <p>player A : {this.state.playerA} </p>
     <p>player B : {this.state.playerB} </p>
+    <p>Tie : {this.state.tie}</p>
         </div>
 
       </div>
