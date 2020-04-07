@@ -1,0 +1,16 @@
+.boxes{
+    color: white;
+    height: 100px;
+    width: 100px;
+    background-color: black;
+    margin: 5px 5px 5px 5px;
+    font-size: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.continer{
+    display: flex;
+    flex-wrap: wrap;
+    width: 400px;
+}
